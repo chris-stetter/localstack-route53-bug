@@ -1,0 +1,7 @@
+name: apps
+description: All application resources for each of our environments (dev, staging and prod).
+runtime:
+    name: python
+config:
+    # TODO: Switch back to "*" once new release of awsx fixes https://github.com/pulumi/pulumi-awsx/issues/930
+    pulumi:disable-default-providers: ["aws"]
